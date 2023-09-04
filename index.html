@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter 2</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <script src="./vue.global.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h3>
+            {{ sum }}
+        </h3>
+        <base-row :base="base" @action-base="actionBase" @clean-all="cleanBase"></base-row>
+        <div v-for="(cell, index) in list">
+            <list-row :rowcell="cell" :index="index" @action-row="action" @clean-row="cleanRow" @row-in-base="rowInBase"></list-row>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="./component/add-minus.js"></script>
+    <script src="./component/Base.js"></script>
+    <script src="./component/Row.js"></script>
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
+</body>
+
+</html>
