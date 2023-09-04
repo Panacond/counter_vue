@@ -10,4 +10,4 @@ Tested on Linux and android.
 
 
 ## you can run it app:
-[counter]((https://panacond.github.io/counter_vue/)https://panacond.github.io/counter_vue/)
+[counter](https://panacond.github.io/counter_vue/)
